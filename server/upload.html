@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>upload picture</title>
+    </head>
+    <body>
+        <h2>A form for uploading picture</h2>
+        <form action="/mosaic" method="post" enctype="multipart/form-data">
+            <label for="image">choose picture file (JPEG, PNG
+                format)</label><br><br>
+            <input type="file" id="image" name="image"
+                accept="image/jpeg, image/png" required><br><br>
+
+            <label for="tile_size">Tile Size (integer):</label><br><br>
+            <input type="number" id="tile_size" name="tile_size" min="1"
+                step="1" required><br><br>
+            <button type="submit">upload</button>
+        </form>
+
+    </body>
+</html>
